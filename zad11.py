@@ -1,0 +1,5 @@
+imie = input("podaj imie")
+nazwisko = input("podaj nazwisko")
+wzrost = input("podaj wzrost")
+print ("nazywasz sie",  imie,   nazwisko)
+print ("twoj wzrost to", wzrost)
