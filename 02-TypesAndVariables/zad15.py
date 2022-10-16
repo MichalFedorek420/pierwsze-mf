@@ -16,6 +16,6 @@ print(b)
 # 210
 print(2**10)
 # Square root of 49 (do not use a function)
-
+print(49**0.5)
 # 25% of 80
 print(25/100*80)
