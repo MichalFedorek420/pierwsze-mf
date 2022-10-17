@@ -1,22 +1,7 @@
-import random
+from random import Random, randrange
 
-prob = random.random()
-print(prob)
 
-diceThrow = random.randrange(1, 7)       # return an int, one of 1,2,3,4,5,6
-print(diceThrow)
-import random
-
-prob = random.random()
-print(prob)
-
-diceThrow = random.randrange(1, 7)       # return an int, one of 1,2,3,4,5,6
-print(diceThrow)
-import random
-
-prob = random.random()
-print(prob)
-
-diceThrow = random.randrange(1, 7)       # return an int, one of 1,2,3,4,5,6
-print(diceThrow)
-print({diceThrow}+{diceThrow+diceThrow})
+a = randrange(1,7)
+b = randrange(1,7)
+c = randrange(1,7)
+print(f"twoje kosci wyrzuciły {a} {b} {c} a ich suma to {a+b+c}")
