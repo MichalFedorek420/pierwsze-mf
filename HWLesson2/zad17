@@ -1,0 +1,14 @@
+from re import X
+
+
+x = (input("podaj argument x:"))
+y = int(input("podaj wartosc y:"))
+if x>0 and y>0:
+    print(f"Punkt P{x},{y} znajduje sie w 1 cwiartce")
+elif x>0 and y<0:
+    print(f"Punkt P{x},{y} znajduje sie w 4 cwiartce")
+elif x<0 and y>0:
+    print(f"Punkt P{x},{y} znajduje sie w 2 cwiartce")
+else:
+    print(f"Punkt P{x},{y} znajduje sie w 3 cwiartce")
+

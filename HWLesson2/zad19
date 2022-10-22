@@ -1,0 +1,6 @@
+x = int(input("ile lat ma pies?"))
+z = x-2
+if x<2:
+    print(x*10.5)
+else:
+    print(f"a wiec ma {z*4+21} lat ludzkich")

@@ -1,0 +1,7 @@
+x = int(input("ile masz kasy:"))
+y = x//5
+print(f"ilosc 5zlotowek to:{y}")
+z = (x-y*5)//2
+print(f"ilosc 2 zlotowek to:{z}")
+k =(x-y*5-z*2)
+print(f"ilosc 1 zlotowek to:{k}")

@@ -1,0 +1,7 @@
+x = 27
+y = 14
+if x>y:
+    print(y, x)
+else:
+    print(x, y)
+
