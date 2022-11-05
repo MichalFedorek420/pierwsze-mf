@@ -1,4 +1,5 @@
-password = "qwerty123"
+
+password = qwerty123
 if len(password) < 8:
     print(f"Password too short")
 else:
