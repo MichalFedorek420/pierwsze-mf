@@ -1,8 +1,10 @@
-def card_number():
-    ada = input("podaj numer konta bankowego: ")
+def card_number(ada):
+    ada = str(ada)
+    x = None
     if len(ada) == 16:
-        print (ada[0:2],"**********",ada[10:15])
+        x = (ada[0:2] +"**********"+ada[10:15])
     else:
-        print("złe hasło")
+        x = "złe hasło"
+    return x
 
-card_number()
+print(card_number(1234567890123456))

@@ -1,6 +1,3 @@
-from re import X
-
-
 x= int(input("podaj x: "))
 y = int(input("podaj y: "))
 

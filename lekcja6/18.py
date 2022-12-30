@@ -1,0 +1,2 @@
+
+stack = []# add value at the top of the stackdef push(value):    stack.append(value)    # remove the topmost element of the stack# and return its value    def pop():    if not empty():        return stack.pop()    else:        return None    # return true if the stack is emptydef empty():    return len(stack) == 0# display stackdef display():    for i in range(len(stack)-1,-1,-1):        print(stack[i])    print()

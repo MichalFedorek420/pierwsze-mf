@@ -1,4 +1,4 @@
-from random import Random, randrange
+from random import randrange
 
 
 a = randrange(1,7)
