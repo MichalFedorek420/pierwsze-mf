@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Group Project Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="body">
+        <h1>EDI GROUP PROJECT</h1>
+        <h3 class="michal">Michał Fedorek</h3>
+        <h3 class="bartek">Bartłomiej Gręda</h3>
+        <h3 class="uliana">Uliana Kutylovskaya</h3>
+        <button id="buttons" onclick="send_request1()">
+            Generate First Table
+        </button>
+        
+        <button id="buttons" onclick="send_request2()">
+            Generate Second Table
+        </button>
+
+        <button id="buttons" onclick="send_request3()">
+            Generate Third Table
+        </button>
+        <div class="table">
+
+        </div>
+        <div>
+            <canvas id="MyChart"></canvas>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            function send_request1() {
+                $.getJSON('https://raw.githubusercontent.com/gredas/EDI/master/schema1%20(1).json', 
+                    function (data) { 
+                        var items = [];
+                        items.push("<tr><td>First name</td><td>Last name</td><td>Country</td><td>Age</td><td>foreign_player</td><td>sport</td><td>position</td><td>email</td><td>phone</td><td>salary</td><td>ip_address</td><td>card</td><td>language</td></tr>");
+                        $.each( data, function( key, value ) {
+                            items.push("<tr><td>"+value.first_name+"</td><td>"+value.last_name+"</td><td>"+value.country+"</td><td>"+value.age+"</td><td>"+value.foreign_player+"</td><td>"+value.sport+"</td><td>"+value.position+"</td><td>"+value.email+"</td><td>"+value.phone+"</td><td>"+value.salary+"</td><td>"+value.ip_address+"</td><td>"+value.card+"</td><td>"+value.language+"</td></tr>");
+                        });
+                        console.log(items);
+                        $("<table/>", {
+                            "class": "asdf",
+                            html: items.join( "" )
+                        }).appendTo( "div.table" );
+                    }) 
+            }
+            function send_request2() {
+                $.getJSON('https://raw.githubusercontent.com/gredas/EDI/master/schema1%20(2).json', 
+                    function (data) { 
+                        var items = [];
+                        items.push("<tr><td>First name</td><td>Last name</td><td>Country</td><td>Age</td><td>foreign_player</td><td>sport</td><td>position</td><td>email</td><td>phone</td><td>salary</td><td>ip_address</td><td>card</td><td>language</td></tr>");
+                        $.each( data, function( key, value ) {
+                            items.push("<tr><td>"+value.first_name+"</td><td>"+value.last_name+"</td><td>"+value.country+"</td><td>"+value.age+"</td><td>"+value.foreign_player+"</td><td>"+value.sport+"</td><td>"+value.position+"</td><td>"+value.email+"</td><td>"+value.phone+"</td><td>"+value.salary+"</td><td>"+value.ip_address+"</td><td>"+value.card+"</td><td>"+value.language+"</td></tr>");
+                        });
+                        console.log(items);
+                        $("<table/>", {
+                            "class": "asdf",
+                            html: items.join( "" )
+                        }).appendTo( "div.table" );
+                    }) 
+            }
+            function send_request3() { 
+                
+                $.getJSON('https://raw.githubusercontent.com/gredas/EDI/master/schema1%20(3).json', 
+                    function (data) { 
+                        var items = [];
+                        items.push("<tr><td>First name</td><td>Last name</td><td>Country</td><td>Age</td><td>foreign_player</td><td>sport</td><td>position</td><td>email</td><td>phone</td><td>salary</td><td>ip_address</td><td>card</td><td>language</td></tr>");
+                        $.each( data, function( key, value ) {
+                            items.push("<tr><td>"+value.first_name+"</td><td>"+value.last_name+"</td><td>"+value.country+"</td><td>"+value.age+"</td><td>"+value.foreign_player+"</td><td>"+value.sport+"</td><td>"+value.position+"</td><td>"+value.email+"</td><td>"+value.phone+"</td><td>"+value.salary+"</td><td>"+value.ip_address+"</td><td>"+value.card+"</td><td>"+value.language+"</td></tr>");
+                        });
+                        console.log(items);
+                        $("<table/>", {
+                            "class": "asdf",
+                            html: items.join( "" )
+                        }).appendTo( "div.table" );
+                    }) 
+                }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+
+        </script>
+    </div>
+</body>
+
+</html>
